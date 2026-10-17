@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>AppPilot Data Deletion</title>
+  <style>
+    :root{color-scheme:light;--ink:#202b38;--muted:#5d6b7b;--accent:#165d55;--paper:#f6f8f7;--line:#dce5e1}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:780px;margin:0 auto;padding:56px 24px 80px}header{margin-bottom:32px}a{color:var(--accent)}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.15;letter-spacing:-.04em;margin:0 0 12px}h2{font-size:1.2rem;margin:32px 0 8px}p,li{color:var(--muted)}.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}.date{font-size:.9rem;color:var(--muted)}code{background:#e8eeeb;padding:.12em .35em;border-radius:4px}footer{margin-top:48px;border-top:1px solid var(--line);padding-top:20px;font-size:.9rem;color:var(--muted)}
+  </style>
+</head>
+<body><main>
+<header><div class="eyebrow">AppPilot · Internal tool</div><h1>Data Deletion Instructions</h1><p class="date">Effective 18 October 2026</p></header>
+<p>AppPilot is a local single-user application and does not maintain an AppPilot-hosted user account or database. Meta account data used by AppPilot is stored in the operator's local installation.</p>
+<h2>Revoke Instagram access</h2>
+<p>Remove AppPilot from the connected Meta/Instagram account's authorized apps, then open AppPilot → Connections → Instagram → <strong>Disconnect</strong>. This clears the Instagram access/refresh tokens and account identifiers from AppPilot. The Instagram OAuth client credentials and existing AppPilot post records are retained by the current disconnect action.</p>
+<h2>Erase all AppPilot data on this computer</h2>
+<p>Stop AppPilot, then remove its local <code>data/rematch.db</code>, <code>data/media/</code>, <code>data/chrome-profile/</code>, and <code>data/secret.key</code> files. Removing the database and key deletes the locally stored connection, post, profile, and usage records; removing the media and Chrome profile deletes generated files and saved browser sessions. This is a full local reset and cannot be undone without a backup.</p>
+<h2>Content already published</h2>
+<p>Deleting an AppPilot record does not remove a post already published to Instagram. Delete that post separately in Instagram. Meta's own records and retention are controlled by Meta.</p>
+<h2>Need help?</h2>
+<p>Contact <a href="mailto:support@dutcho.app">support@dutcho.app</a> and identify the service as AppPilot. Do not email passwords, access tokens, or account credentials.</p>
+<footer><a href="/privacy/">AppPilot Privacy Policy</a></footer>
+</main></body></html>

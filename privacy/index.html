@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>AppPilot Privacy Policy</title>
+  <style>
+    :root{color-scheme:light;--ink:#202b38;--muted:#5d6b7b;--accent:#165d55;--paper:#f6f8f7;--line:#dce5e1}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:780px;margin:0 auto;padding:56px 24px 80px}header{margin-bottom:32px}a{color:var(--accent)}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.15;letter-spacing:-.04em;margin:0 0 12px}h2{font-size:1.2rem;margin:32px 0 8px}p,li{color:var(--muted)}.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}.date{font-size:.9rem;color:var(--muted)}footer{margin-top:48px;border-top:1px solid var(--line);padding-top:20px;font-size:.9rem;color:var(--muted)}
+  </style>
+</head>
+<body><main>
+<header><div class="eyebrow">AppPilot · Internal tool</div><h1>Privacy Policy</h1><p class="date">Effective 18 October 2026</p></header>
+<p>AppPilot is a local-first desktop workspace operated by Shivansh Tekriwal to plan and manage social publishing for mobile apps. This policy describes information processed by AppPilot when its operator connects third-party services.</p>
+<h2>Information processed</h2>
+<p>AppPilot stores social account identifiers and profile names returned during OAuth, connection status, OAuth credentials, post copy, schedules, generated media, and publishing results in a local SQLite database and files on the operator's computer. API credentials and OAuth tokens are encrypted at rest. AppPilot's optional tracked links record click time, associated post/platform, referrer, and browser user-agent. AppPilot does not collect telemetry.</p>
+<h2>Instagram and Meta</h2>
+<p>When Instagram is connected, AppPilot receives the connected professional account's identifier and username and stores its access token locally. It uses the connection to publish content when the operator requests a publish or has enabled scheduled autopilot. AppPilot's current Instagram integration does not read comments, messages, or insights. Disconnecting removes Instagram access and refresh tokens and account identifiers from the connection record; OAuth application credentials and existing post records remain. Posts already published to Instagram remain there until deleted through Instagram.</p>
+<h2>Other services</h2>
+<p>If the operator enables trend research, search terms are sent to configured public trend sources (currently Google Trends, Mastodon, and Reddit). If an LLM target is configured, prompts and relevant app/content context are sent to that provider to generate or answer content requests. The provider's own privacy and retention terms apply. When publishing, content and media are sent to the destination social platform. Browser mode uses a dedicated local Chrome profile whose session data is stored on the operator's computer.</p>
+<h2>Storage and retention</h2>
+<p>AppPilot has no AppPilot-hosted database or user-account service. Its database, generated media, credentials, and browser profile stay on the operator's computer. They remain until the operator deletes them. Meta, LLM providers, trend sources, and social platforms process information under their own terms and retention practices.</p>
+<h2>Choices and deletion</h2>
+<p>The operator can disconnect a service in AppPilot's Connections view or revoke AppPilot in the service's account settings. Disconnecting does not delete historical AppPilot posts or content already published on a platform. See the <a href="/data-deletion/">AppPilot data deletion instructions</a> for complete local removal steps.</p>
+<h2>Contact</h2>
+<p>Questions about this policy can be sent to <a href="mailto:support@dutcho.app">support@dutcho.app</a>.</p>
+<footer>AppPilot is an internal-use tool. This policy describes its current implementation as of 18 October 2026.</footer>
+</main></body></html>
